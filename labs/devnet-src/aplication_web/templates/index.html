@@ -1,0 +1,19 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+
+        <title>Primera Pagina FLASK</title>
+        <link rel="stylesheet" type="text/css"
+                href="{{ url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+        <h1>BIenvenido a mi Aplicacion flask</h1>
+        <h1>Tu IP es: {{ ip }}</h1>
+	<h1> Tu S.O es: {{ SO}}</h1>
+	<h1> Tu usuario es: {{user}}</h1>
+	<h1> La fecha del SO es: {{fecha}}</h1>
+	<h1> Tu ruta donde esta esto es: {{ruta}}</h1>
+</body>
+</html>
