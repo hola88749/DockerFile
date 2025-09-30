@@ -1,0 +1,13 @@
+
+@app.route('/')
+
+#def hola_mundo():
+#       msj "Hola esta es mi primer app Flask"
+#       ipadd = reques.remote_addr
+#       return msj + str (ipadd)
+def home ():
+    ipadd = request.remote_addr
+    return render_template ('index.html',ip = ipadd)
+
+if __name__== '__main__':
+        app.run(host='0.0.0.0',port= 5000)
